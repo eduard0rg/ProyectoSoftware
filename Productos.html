@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo-blanco.png" alt="Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <form class="formulario-sesion">
+                <input type="text" placeholder="Usuario" name="usuario">
+                <input type="password" placeholder="Contraseña" name="contraseña">
+                <button type="submit">Iniciar sesión</button>
+                <button type="button" onclick="toggleFormularios()">¿No estás registrado?</button>
+            </form>
+
+            <form class="formulario-registro escondido">
+                <input type="email" placeholder="Correo" name="correo">
+                <input type="password" placeholder="Crear contraseña" name="nueva-contraseña">
+                <button type="submit">Registrarse</button>
+                <button type="button" onclick="toggleFormularios()">¿Ya tienes cuenta?</button>
+            </form>
+
+        </div>   
+    </header>
+
+    <div id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+
+    <main>
+        <ul class="productos">
+
+            <li>
+                <h2>Producto 1</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 2</h2>
+                <img src="imagenes/producto2.jpg" alt="Producto 2">
+                <p class="producto-descripcion">Descripción del producto 2</p>
+                <p class="producto-precio">$20.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 3</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 4</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 5</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 6</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 7</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 8</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 9</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 10</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 11</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+            <li>
+                <h2>Producto 12</h2>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <p class="producto-descripcion">Descripción del producto 1</p>
+                <p class="producto-precio">$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </li>
+
+        </ul>
+
+        <section class="carrito" id="barra-carrito">
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total-carrito">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo">
+        <p>&copy; Copyright Tienda de Ropa - 2024</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+ </html>

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f42b;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajuste de padding */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 0; /* Cambio para alinear a la izquierda */
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos del formulario de sesión y registro */
+.formulario-sesion, .formulario-registro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Permite la envoltura de elementos si no caben en una sola línea */
+}
+
+.formulario-sesion input[type="text"],
+.formulario-sesion input[type="password"],
+.formulario-registro input[type="email"],
+.formulario-registro input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-sesion button, .formulario-registro button {
+    padding: 5px 10px;
+    background-color: #c78c19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-sesion button:hover, .formulario-registro button:hover {
+    background-color: #88c198;
+}
+
+.escondido {
+    display: none;
+}
+
+.formulario-sesion button[type="button"] {
+    background-color: transparent;
+    color: #c78c19;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 28%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid #000;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active {
+    border-color: #88c198;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#barra-carrito {
+    /* Estilos existentes de tu barra de carrito */
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+#barra-carrito.activo {
+    transform: translateX(0%);
+}
+
+/* Estilos para el ícono del menú */
+#menu-icon {
+    cursor: pointer;
+    display: block; /* Cambiado a block para manejar mejor el espaciado */
+    position: absolute;
+    top: 20px; /* Ajusta según la posición del logo */
+    left: 10px;
+    z-index: 1001; /* Para asegurar que esté por encima de la barra lateral */
+}
+
+#menu-icon span {
+    display: block;
+    width: 30px; /* Ancho de las barras */
+    height: 3px; /* Altura de las barras */
+    background-color: #333; /* Color de las barras */
+    margin: 5px 0; /* Espacio entre las barras */
+}
+
+/* Asegurar que la barra lateral aparece debajo del logo y sobre los productos */
+.carrito {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background-color: #fff; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.carrito.activo {
+    transform: translateX(0); /* Mostrar al activar */
+}
+
+/* Asegurarte de que el contenido no se sobreponga */
+main {
+    padding-top: 70px; /* Ajustar basado en la altura total de tu header */
+}
+
