@@ -27,13 +27,13 @@ header a, footer a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Ajuste de padding */
+    padding: 0 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: 0; /* Cambio para alinear a la izquierda */
+    margin-left: 0;
     padding: 0;
 }
 
@@ -45,12 +45,11 @@ nav ul li:last-child {
     margin-right: 0;
 }
 
-/* Estilos del formulario de sesión y registro */
 .formulario-sesion, .formulario-registro {
     display: flex;
     gap: 10px;
     align-items: center;
-    flex-wrap: wrap; /* Permite la envoltura de elementos si no caben en una sola línea */
+    flex-wrap: wrap;
 }
 
 .formulario-sesion input[type="text"],
@@ -143,7 +142,7 @@ img {
 }
 
 #barra-carrito {
-    /* Estilos existentes de tu barra de carrito */
+
     transition: transform 0.3s ease;
     transform: translateX(-100%);
 }
@@ -152,14 +151,14 @@ img {
     transform: translateX(0%);
 }
 
-/* Estilos para el ícono del menú */
+
 #menu-icon {
     cursor: pointer;
-    display: block; /* Cambiado a block para manejar mejor el espaciado */
+    display: block; 
     position: absolute;
-    top: 20px; /* Ajusta según la posición del logo */
+    top: 20px; 
     left: 10px;
-    z-index: 1001; /* Para asegurar que esté por encima de la barra lateral */
+    z-index: 1001;
 }
 
 #menu-icon span {

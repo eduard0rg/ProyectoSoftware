@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f42b;
+    color: #333;
+    background-image: url('imagenes/guernica.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ropa-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    gap: 20px;
+    padding: 20px;
+    max-width: 440px; /* Ajustado según el tamaño de las imágenes y el espacio deseado entre ellas */
+    /* Eliminamos margin-left y margin-right automáticos para no centrar el contenedor */
+    border: 1px solid transparent; /* Cambiado a transparente para mantener el layout sin mostrar un borde. Modifica según necesidad */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black; /* Añade un borde a cada imagen si deseas */
+}
+
