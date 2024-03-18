@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f42b;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.logo {
+    height: 60px; /* Ajusta este valor según sea necesario */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.enviar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enviar:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Pequeños ajustes para mejorar la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .input-padron, textarea, select {
+        width: 100%;
+    }
+
+    fieldset, label, input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

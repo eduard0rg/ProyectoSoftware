@@ -25,12 +25,30 @@ header a, footer a {
     text-transform: uppercase;
 }
 
+.titulo-principal {
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
+    font-weight: 1000;
+    color: #efefef;
+    margin-left: 20px; 
+    display: inline-block;
+}
+
+
 .caja {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
+
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+
 
 nav ul {
     list-style: none;

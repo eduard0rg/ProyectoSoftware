@@ -23,6 +23,12 @@ header a, footer a {
     text-transform: uppercase;
 }
 
+.logo {
+    height: 80px; /* Ajusta este valor según sea necesario */
+    width: auto;
+    margin-left: 20px;
+}
+
 .caja {
     display: flex;
     justify-content: space-between;
