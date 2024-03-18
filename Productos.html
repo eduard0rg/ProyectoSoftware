@@ -18,19 +18,20 @@
                 </ul>
             </nav>
             
-            <form class="formulario-sesion">
-                <input type="text" placeholder="Usuario" name="usuario">
-                <input type="password" placeholder="Contraseña" name="contraseña">
+            <form class="formulario-sesion" action="login.php" method="POST">
+                <input type="text" placeholder="Usuario" name="usuario" required>
+                <input type="password" placeholder="Contraseña" name="contrasena" required>
                 <button type="submit">Iniciar sesión</button>
                 <button type="button" onclick="toggleFormularios()">¿No estás registrado?</button>
             </form>
 
-            <form class="formulario-registro escondido">
-                <input type="email" placeholder="Correo" name="correo">
-                <input type="password" placeholder="Crear contraseña" name="nueva-contraseña">
+            <form class="formulario-registro escondido" action="registro.php" method="POST">
+                <input type="email" placeholder="Correo" name="correo" required>
+                <input type="password" placeholder="Crear contraseña" name="contrasena" required> <!-- Cambio realizado aquí también -->
                 <button type="submit">Registrarse</button>
                 <button type="button" onclick="toggleFormularios()">¿Ya tienes cuenta?</button>
             </form>
+            
 
         </div>   
     </header>
